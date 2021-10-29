@@ -91,7 +91,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **𝗟𝗼𝗮𝗱 𝗕𝗲𝘀𝘁 👌𝗤𝘂𝗮𝗹𝗶𝘁𝘆 ❤️ 𝗦𝗼𝗻𝗴 🎶🤟**")
+    lel = await message.reply("🔄 **𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴....🔍**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -137,7 +137,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 ✨ 𝗧𝗼 𝗣𝗹𝗮𝘆 ❤️🤞"
+                f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆 ❤️🤞"
             )
 
         file_name = get_file_name(audio)
@@ -220,18 +220,18 @@ async def play(_, message: Message):
                     ]
                 )
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 ✨ 𝗧𝗼 𝗣𝗹𝗮𝘆 ❤️🤞")
+             await lel.edit(f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻 {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆 ❤️🤞")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("✌**𝗪𝗵𝗮𝘁'𝘀 𝗧𝗵𝗲 ❤️ 𝗦𝗼𝗻𝗴 🎶 𝗬𝗼𝘂 😎 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗣𝗹𝗮𝘆 🧿🤟**")
-        await lel.edit("🔎 **𝗙𝗶𝗻𝗱𝗶𝗻𝗴 💫 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴...**")
+            return await lel.edit("✌**𝗪𝗵𝗮𝘁'𝘀 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 🎶 𝗬𝗼𝘂 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗣𝗹𝗮𝘆 ?**")
+        await lel.edit("🔎 **𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴....🔍...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝘂𝗻𝗱 🔊**")
+        await lel.edit("🎵 **𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗶𝗻𝗴....📥**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -274,7 +274,7 @@ async def play(_, message: Message):
             )
         
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻  {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 ✨ 𝗧𝗼 𝗣𝗹𝗮𝘆 ❤️🤞")
+             await lel.edit(f"❰𝗩𝗶𝗱𝗲𝗼 🧿❱ 𝗟𝗼𝗻𝗴𝗲𝗿 𝗧𝗵𝗮𝗻  {DURATION_LIMIT} 𝗠𝗶𝗻𝘂𝘁𝗲𝘀 𝗔𝗿𝗲𝗻'𝘁 𝗔𝗹𝗹𝗼𝘄𝗲𝗱 𝗧𝗼 𝗣𝗹𝗮𝘆 ❌")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)  
@@ -284,7 +284,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**𝗦𝗼𝗻𝗴 ❤️ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻 💫🤟** {}".format(
+        caption="**☑️ 𝗤𝘂𝗲𝘂𝗲𝗱 𝗔𝘁 »** {}".format(
         position
         ),
         reply_markup=keyboard)
@@ -295,7 +295,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**❰ 𝗜𝗿𝗼𝗻𝗛𝗲𝗮𝗿𝘁 ❤️ 𝗠𝘂𝘀𝗶𝗰 ❱ Now 😄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗔𝘁 🤟 `{}`...**".format(
+        caption="**❰ 𝗜𝗿𝗼𝗻𝗛𝗲𝗮𝗿𝘁 ❤️ 𝗠𝘂𝘀𝗶𝗰 ❱ 𝗡𝗼𝘄 𝗽𝗹𝗮𝘆𝗶𝗻𝗴 𝗮𝘁 `{}`...**".format(
         message.chat.title
         ), )
         os.remove("final.png")
