@@ -22,7 +22,7 @@ from yt_dlp.utils import (
 
 @Client.on_message(filters.command("song") & ~filters.edited)
 async def song(client, message):
-    cap = "@JEBotZ"
+    cap = "@Harsh7_Musicbot"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
