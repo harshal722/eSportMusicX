@@ -151,10 +151,10 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="»» ᴄʜᴀɴɴᴇʟ ««",
                             url=f"https://t.me/ironheartsupport722"),
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
+                            text="»» ɢʀᴏᴜᴘ ««",
                             url=f"https://t.me/joinchat/XRpecZHWmcpkYjU9")
                    
                 ]
@@ -192,10 +192,10 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="»» ᴄʜᴀɴɴᴇʟ ««",
                             url=f"https://t.me/ironheartsupport722"),
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
+                            text="»» ɢʀᴏᴜᴘ ««",
                             url=f"https://t.me/joinchat/XRpecZHWmcpkYjU9")
 
                     ]
@@ -210,10 +210,10 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="»» ᴄʜᴀɴɴᴇʟ ««",
                             url=f"https://t.me/ironheartsupport722"),
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
+                            text="»» ɢʀᴏᴜᴘ ««",
                             url=f"https://t.me/joinchat/XRpecZHWmcpkYjU9")
 
                         ]
@@ -264,10 +264,10 @@ async def play(_, message: Message):
                     [
                       
                         InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="»» ᴄʜᴀɴɴᴇʟ ««",
                             url=f"https://t.me/ironheartsupport722"),
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
+                            text="»» ɢʀᴏᴜᴘ ««",
                             url=f"https://t.me/joinchat/XRpecZHWmcpkYjU9")
                     ]
                 ]
