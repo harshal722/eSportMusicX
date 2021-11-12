@@ -11,7 +11,7 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""**Hey, I'm {bn} 🎵
 
-I can play music in your group's voice call. And Developed By - [𝗛𝗔𝗥𝗦𝗛](https://t.me/Harsh_722).
+I can play music in your group's voice call. And Developed By - [𝗛𝗔𝗥𝗦𝗛](https://t.me/H4RSH_722).
 
 Add me to your group and play music freely!**
         """,
@@ -19,7 +19,7 @@ Add me to your group and play music freely!**
             [
                 [
                     InlineKeyboardButton(
-                        "🔱 𝗢𝗪𝗡𝗘𝗥 🔱", url="https://t.me/Harsh_722")
+                        "🔱 𝗢𝗪𝗡𝗘𝗥 🔱", url="https://t.me/H4RSH_722")
                   ],[
                     InlineKeyboardButton(
                         "🎧 𝗔𝗦𝗦𝗜𝗦𝗧𝗔𝗡𝗧 ", url="https://t.me/IronHeart_Assistant_722"
@@ -36,7 +36,7 @@ Add me to your group and play music freely!**
      disable_web_page_preview=True
     )
 
-@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("ironheart") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
       await message.reply_text("""**⚡️ 𝗜𝗿𝗼𝗻𝗛𝗲𝗮𝗿𝘁 𝗠𝘂𝘀𝗶𝗰 ⚡️**""",
       reply_markup=InlineKeyboardMarkup(
